@@ -1,7 +1,7 @@
 var taskat = []
 // taskat=taskat.concat( localStorage.getItem("list"))
 var task = document.getElementById("task") // input feild 
-var list = document.getElementById("list")    // list that shows
+var list = document.getElementById("list")    // list that showssssss
 
 function add() {
     taskat.push(task.value)

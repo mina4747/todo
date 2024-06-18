@@ -24,61 +24,19 @@ function show() {
 localStorage.clear();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  const task =document.getElementById('task');
+// const task = document.getElementById('task');
 // var list = document.getElementById('list');
-// function add(){
-//   let li = document.createElement("li");
-//   li.innerHTML=task.value
-//   list.appendChild(li)
-//   task.value=""
-//   save();
+// function add() {
+//     let li = document.createElement("li");
+//     li.innerHTML = task.value
+//     list.appendChild(li)
+//     task.value = ""
+//     save();
 // }
-// function save(){
-//     localStorage.setItem( "data" , list.innerHTML )
+// function save() {
+//     localStorage.setItem("data", list.innerHTML)
 // }
-// function show(){
-//     list.innerHTML= localStorage.getItem("data");
+// function show() {
+//     list.innerHTML = localStorage.getItem("data");
 // }
 // show();

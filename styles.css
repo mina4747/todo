@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(111, 111, 111);
+    padding: 0px;
+    margin: 0px;
+}
+
+.head {
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    background-color: rgb(71, 71, 71);
+}
+
+.header {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.foorm {
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.list {
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+}

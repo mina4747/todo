@@ -29,3 +29,8 @@ function show() {
     `);
 
 }
+function empty(){
+    taskat=[]
+    localStorage.clear();
+    window.location.reload();
+}

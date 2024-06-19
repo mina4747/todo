@@ -11,17 +11,22 @@
 
 <body>
     <div class="head" id="head">
-        <p class="header">todo</p>
+        <p class="title">
+              To-Do
+        </p>
     </div>
     <div class="enter" id="enter">
         <form class="foorm"  onsubmit="add( )">
             <input type="text" id="task" autocomplete="off" placeholder="enter your new task here" autofocus>
             <button type="submit" id="send">add</button>
+            <button class="clear" id="clear" type="button" onclick="empty()">clear</button>
         </form>
     </div>
+    <div class="listBox">
     <ul class="list" id="list">
          
     </ul>
+</div>
     <script src="script.js"></script>
 </body>
 

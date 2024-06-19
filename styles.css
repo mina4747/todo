@@ -2,32 +2,43 @@ body {
     background-color: rgb(111, 111, 111);
     padding: 0px;
     margin: 0px;
-}
-
-.head {
-    width: 100%;
-
+    background-image:url("wallpaper.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     display: grid;
     place-items: center;
-    background-color: rgb(71, 71, 71);
 }
 
-.header {
+.title{
+    color: #929AA9;
     text-decoration: none;
-    color: antiquewhite;
+    font-family:fantasy;
 }
-
-.foorm {
-    margin-top: 10px;
-    width: 100%;
+.listBox{
+    width: 70%;
     display: grid;
     place-items: center;
-
+    background-color: antiquewhite;
+    margin: 10px;
+    padding: 0px;
+    border-radius: 20px 20px 20px 20px;
 }
-
-.list {
-    width: 100%;
+.listBox ul{
+    width: 99%;
     display: grid;
     place-items: center;
-
+}
+.listBox li{
+    width: 90%;
+    display:grid;
+    place-items: center;
+    list-style: none;
+    color: brown;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px 10px 10px 10px;
+    padding:5px;
+    margin: 5px;
 }

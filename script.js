@@ -1,42 +1,31 @@
-var taskat = []
-// taskat=taskat.concat( localStorage.getItem("list"))
-var task = document.getElementById("task") // input feild 
-var list = document.getElementById("list")    // list that showssssss
+if (JSON.parse(localStorage.getItem("list"))) {
+    var taskat = JSON.parse(localStorage.getItem("list"))
+    var task = document.getElementById("task") // input feild 
+    var list = document.getElementById("list") // list that shows the tasks
+    show()
+} else {
+
+    var taskat = []
+    var task = document.getElementById("task") // input feild 
+    var list = document.getElementById("list") // list that shows the tasks
+}
 
 function add() {
-    taskat.push(task.value)
-    saveList();
-}
-function saveList() {
-    localStorage.setItem("list", taskat)
-    show();
-}
-function show() {
-    var templist = document.createElement('ul')
-    for (var i = 0; i < taskat.length; i++) {
-        let li = document.createElement("li")
-        li.innerHTML = taskat[i]
-        templist.appendChild(li)
+    if (task.value != "") {
+        taskat.push(task.value)
+        localStorage.setItem("list", JSON.stringify(taskat))
+        show();
+        task.value = ""
+    } else {
+        alert("you must enter something")
     }
-    list.innerHTML = templist.innerHTML
 }
 
-localStorage.clear();
+function show() {
+    list.innerHTML = ``;
+    taskat.forEach((element) =>
+        list.innerHTML += `
+        <li> ${element}</li>
+    `);
 
-
-// const task = document.getElementById('task');
-// var list = document.getElementById('list');
-// function add() {
-//     let li = document.createElement("li");
-//     li.innerHTML = task.value
-//     list.appendChild(li)
-//     task.value = ""
-//     save();
-// }
-// function save() {
-//     localStorage.setItem("data", list.innerHTML)
-// }
-// function show() {
-//     list.innerHTML = localStorage.getItem("data");
-// }
-// show();
+}

@@ -25,12 +25,22 @@ function show() {
     list.innerHTML = ``;
     taskat.forEach((element) =>
         list.innerHTML += `
-        <li> ${element}</li>
-    `);
+    <div class="row"> <li>${element} </li>
+        <div class="buttons">
+            <button>check</button>
+            <button>remove</button>
+        </div>
+    </div><br>
+    `
+);
 
 }
 function empty(){
     taskat=[]
     localStorage.clear();
     window.location.reload();
+}
+
+function remove(){
+    
 }
